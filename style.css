@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+*{
+    font-family: 'Popines', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 20px;
+    background-color: cornflowerblue;
+    position: sticky;
+    top: 0;
+    border-bottom: 1px solid white;
+    z-index: 1000;
+}
+#logo h1{
+    font-weight: 800;
+    font-size: 2rem;
+    color: white;
+}
+#filter #btn,#btn1,#btn2,#btn3{
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 1.2rem;
+    padding: 10px 15px;
+    transition: color 0.5s ease;
+}
+#filter #btn:hover,#btn1:hover,#btn2:hover,#btn3:hover{
+    color: blueviolet;
+}
+.products #sub_head{
+    text-align: center;
+    color: white;
+    padding: 20px 0;
+    background-color: rgb(128,128,128);
+    text-decoration: underline cornflowerblue;
+}
+#sub_head2{
+    text-align: center;
+    color: white;
+    padding: 20px 0;
+    border-bottom: 1px solid white;
+}
+.products{
+    background: gray;
+}
+#prod{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 40px;
+    width: 100%;
+    padding: 20px 50px;
+}
+.subDiv{
+    text-align: center;
+    border-radius: 20px;
+    background-color: rgb(137, 137, 137);
+    box-shadow: inset 4px -4px 8px rgba(0, 0, 0, 0.557);
+    height: 70vh;
+}
+h2{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+    /* text-decoration: underline cornflowerblue; */
+    color: #323232;
+    text-align: center;
+}
+p{
+    text-align: justify;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    color: white;
+    font-weight: 600;
+    margin: 7px 10px;
+}
+img{
+    /* mix-blend-mode: color-burn; */
+    opacity: 0.5;
+    width: 300px;
+    object-fit: contain;
+    padding: 20px;
+    margin-top: 12px;
+    background-color: white;
+    border-radius: 10px;
+    filter: drop-shadow(3px -2px 6px rgba(89, 148, 179, 0.525));
+    transition: all 0.5s ease;
+}
+img:hover{
+    mix-blend-mode: normal;
+    background-color: #fff;
+    cursor: pointer;
+    opacity: 1;
+    filter: drop-shadow(3px -2px 6px rgba(89, 148, 179, 0.825));
+}
+h3{
+    text-align: left;
+    color: #3d3d3d;
+    margin: 0px 10px;
+}
+h4{
+    text-align: left;
+    color: #fff;
+    padding: 10px 0;
+    margin: 0 10px;
+}
+a{
+    text-decoration: none;
+    border: none;
+    background: rgba(103, 189, 235, 0.9);
+    color: white;
+    font-size: 1.1rem;
+    border-radius: 3px;
+    padding: 8px 45px;
+    font-weight: 600;
+    cursor: pointer;
+    /* filter: drop-shadow(-1px 3px 6px rgba(0, 0, 0, 0.635)); */
+}
+footer{
+    height: 40vh;
+    background-color: cornflowerblue;
+}
